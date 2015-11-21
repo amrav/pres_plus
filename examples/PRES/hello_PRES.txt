@@ -1,0 +1,826 @@
+Basic block (name=bb) has 11 instr.
+  %tmp = alloca i32, align 4
+Subnet:
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+
+Done merging outs and ins
+
+making consistent!
+Processing out port: 197677143
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+
+  %x = alloca [3 x i32], align 4
+Subnet:
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 702460492
+pre_set: 1535881485
+ post_set:
+ variable: x
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492
+transition function: operator: alloca op1: 1 op2:
+
+Done merging outs and ins
+
+making consistent!
+Processing out port: 197677143
+Processing out port: 702460492
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 702460492
+pre_set: 1535881485
+ post_set:
+ variable: x
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492
+transition function: operator: alloca op1: 1 op2:
+
+  %z = alloca i32, align 4
+Subnet:
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+
+Done merging outs and ins
+
+making consistent!
+Processing out port: 197677143
+Processing out port: 702460492
+Processing out port: 830950674
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 702460492
+pre_set: 1535881485
+ post_set:
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492
+transition function: operator: alloca op1: 1 op2:
+
+  store i32 0, i32* %tmp
+Subnet:
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+
+Done merging outs and ins
+
+making consistent!
+Processing out port: 197677143
+Processing out port: 702460492
+Processing out port: 830950674
+Processing out port: 1533374615
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 702460492
+pre_set: 1535881485
+ post_set:
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492
+transition function: operator: alloca op1: 1 op2:
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+
+  %tmp1 = getelementptr inbounds [3 x i32], [3 x i32]* %x, i32 0, i64 1
+Subnet:
+Place: 27401955
+pre_set: 983157227
+ post_set:
+ variable: tmp1
+Place: 541121000
+pre_set:
+ post_set: 983157227
+ variable: x
+Transition: 983157227
+pre_set: 541121000
+post_set: 27401955
+transition function: operator: getelementptr op1: 1 op2:
+
+Found matching out and in: 702460492 541121000
+Done merging outs and ins
+
+making consistent!
+Processing out port: 27401955
+Processing out port: 197677143
+Processing out port: 830950674
+Processing out port: 1533374615
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 27401955
+pre_set: 983157227
+ post_set:
+ variable: tmp1
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 702460492
+pre_set: 1535881485
+ post_set: 983157227
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 983157227
+pre_set: 702460492
+post_set: 27401955
+transition function: operator: getelementptr op1: 1 op2:
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492
+transition function: operator: alloca op1: 1 op2:
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+
+  store i32 5, i32* %tmp1, align 4
+Subnet:
+Place: 1184334171
+pre_set: 78487954
+ post_set:
+ variable: tmp1
+Transition: 78487954
+pre_set:
+post_set: 1184334171
+transition function: operator: store op1: 5 op2:
+
+Done merging outs and ins
+
+making consistent!
+Processing out port: 27401955
+Processing out port: 197677143
+Processing out port: 830950674
+Processing out port: 1184334171
+Processing out port: 1533374615
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 27401955
+pre_set: 983157227
+ post_set:
+ variable: tmp1
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 702460492
+pre_set: 1535881485
+ post_set: 983157227
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Place: 1184334171
+pre_set: 78487954
+ post_set:
+ variable: tmp1
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Transition: 78487954
+pre_set:
+post_set: 1184334171
+transition function: operator: store op1: 5 op2:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 983157227
+pre_set: 702460492
+post_set: 27401955
+transition function: operator: getelementptr op1: 1 op2:
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492
+transition function: operator: alloca op1: 1 op2:
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+
+  %tmp2 = getelementptr inbounds [3 x i32], [3 x i32]* %x, i32 0, i64 1
+Subnet:
+Place: 592083620
+pre_set:
+ post_set: 1654848637
+ variable: x
+Place: 1857664789
+pre_set: 1654848637
+ post_set:
+ variable: tmp2
+Transition: 1654848637
+pre_set: 592083620
+post_set: 1857664789
+transition function: operator: getelementptr op1: 1 op2:
+
+Done merging outs and ins
+Found matching intermediates: 702460492 592083620
+
+making consistent!
+Processing out port: 27401955
+Processing out port: 197677143
+Processing out port: 830950674
+Processing out port: 1184334171
+Processing out port: 1533374615
+Processing out port: 1857664789
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 27401955
+pre_set: 983157227
+ post_set:
+ variable: tmp1
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 592083620
+pre_set: 1535881485
+ post_set: 1654848637
+ variable: x
+Place: 702460492
+pre_set: 1535881485
+ post_set: 983157227
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Place: 1184334171
+pre_set: 78487954
+ post_set:
+ variable: tmp1
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Place: 1857664789
+pre_set: 1654848637
+ post_set:
+ variable: tmp2
+Transition: 78487954
+pre_set:
+post_set: 1184334171
+transition function: operator: store op1: 5 op2:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 983157227
+pre_set: 702460492
+post_set: 27401955
+transition function: operator: getelementptr op1: 1 op2:
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492 592083620
+transition function: operator: alloca op1: 1 op2:
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+Transition: 1654848637
+pre_set: 592083620
+post_set: 1857664789
+transition function: operator: getelementptr op1: 1 op2:
+
+  %tmp3 = load i32, i32* %tmp2, align 4
+Subnet:
+Place: 907770150
+pre_set: 1169082762
+ post_set:
+ variable: tmp3
+Place: 980329762
+pre_set:
+ post_set: 1169082762
+ variable: tmp2
+Transition: 1169082762
+pre_set: 980329762
+post_set: 907770150
+transition function: operator: load op1:  op2:
+
+Found matching out and in: 1857664789 980329762
+Done merging outs and ins
+
+making consistent!
+Processing out port: 27401955
+Processing out port: 197677143
+Processing out port: 830950674
+Processing out port: 907770150
+Processing out port: 1184334171
+Processing out port: 1533374615
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 27401955
+pre_set: 983157227
+ post_set:
+ variable: tmp1
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 592083620
+pre_set: 1535881485
+ post_set: 1654848637
+ variable: x
+Place: 702460492
+pre_set: 1535881485
+ post_set: 983157227
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 907770150
+pre_set: 1169082762
+ post_set:
+ variable: tmp3
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Place: 1184334171
+pre_set: 78487954
+ post_set:
+ variable: tmp1
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Place: 1857664789
+pre_set: 1654848637
+ post_set: 1169082762
+ variable: tmp2
+Transition: 78487954
+pre_set:
+post_set: 1184334171
+transition function: operator: store op1: 5 op2:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 983157227
+pre_set: 702460492
+post_set: 27401955
+transition function: operator: getelementptr op1: 1 op2:
+Transition: 1169082762
+pre_set: 1857664789
+post_set: 907770150
+transition function: operator: load op1:  op2:
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492 592083620
+transition function: operator: alloca op1: 1 op2:
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+Transition: 1654848637
+pre_set: 592083620
+post_set: 1857664789
+transition function: operator: getelementptr op1: 1 op2:
+
+  %tmp4 = add nsw i32 %tmp3, 2
+Subnet:
+Place: 115254047
+pre_set:
+ post_set: 1438349418
+ variable: tmp3
+Place: 1446094531
+pre_set: 1438349418
+ post_set:
+ variable: tmp4
+Transition: 1438349418
+pre_set: 115254047
+post_set: 1446094531
+transition function: operator: add op1:  op2: 2
+
+Found matching out and in: 907770150 115254047
+Done merging outs and ins
+
+making consistent!
+Processing out port: 27401955
+Processing out port: 197677143
+Processing out port: 830950674
+Processing out port: 1184334171
+Processing out port: 1446094531
+Processing out port: 1533374615
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 27401955
+pre_set: 983157227
+ post_set:
+ variable: tmp1
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 592083620
+pre_set: 1535881485
+ post_set: 1654848637
+ variable: x
+Place: 702460492
+pre_set: 1535881485
+ post_set: 983157227
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 907770150
+pre_set: 1169082762
+ post_set: 1438349418
+ variable: tmp3
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Place: 1184334171
+pre_set: 78487954
+ post_set:
+ variable: tmp1
+Place: 1446094531
+pre_set: 1438349418
+ post_set:
+ variable: tmp4
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Place: 1857664789
+pre_set: 1654848637
+ post_set: 1169082762
+ variable: tmp2
+Transition: 78487954
+pre_set:
+post_set: 1184334171
+transition function: operator: store op1: 5 op2:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 983157227
+pre_set: 702460492
+post_set: 27401955
+transition function: operator: getelementptr op1: 1 op2:
+Transition: 1169082762
+pre_set: 1857664789
+post_set: 907770150
+transition function: operator: load op1:  op2:
+Transition: 1438349418
+pre_set: 907770150
+post_set: 1446094531
+transition function: operator: add op1:  op2: 2
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492 592083620
+transition function: operator: alloca op1: 1 op2:
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+Transition: 1654848637
+pre_set: 592083620
+post_set: 1857664789
+transition function: operator: getelementptr op1: 1 op2:
+
+  store i32 %tmp4, i32* %z, align 4
+Subnet:
+Place: 44518335
+pre_set: 895347189
+ post_set:
+ variable: z
+Place: 682290994
+pre_set:
+ post_set: 895347189
+ variable: tmp4
+Transition: 895347189
+pre_set: 682290994
+post_set: 44518335
+transition function: operator: store op1:  op2:
+
+Found matching out and in: 1446094531 682290994
+Done merging outs and ins
+
+making consistent!
+Processing out port: 27401955
+Processing out port: 44518335
+Processing out port: 197677143
+Processing out port: 830950674
+Processing out port: 1184334171
+Processing out port: 1533374615
+Done erasing faux out ports
+PRES+ model so far:
+Subnet:
+Place: 27401955
+pre_set: 983157227
+ post_set:
+ variable: tmp1
+Place: 44518335
+pre_set: 895347189
+ post_set:
+ variable: z
+Place: 197677143
+pre_set: 202540492
+ post_set:
+ variable: tmp
+Place: 336468549
+pre_set:
+ post_set: 1535881485
+ variable:
+Place: 592083620
+pre_set: 1535881485
+ post_set: 1654848637
+ variable: x
+Place: 702460492
+pre_set: 1535881485
+ post_set: 983157227
+ variable: x
+Place: 806681455
+pre_set:
+ post_set: 701821477
+ variable:
+Place: 830950674
+pre_set: 701821477
+ post_set:
+ variable: z
+Place: 907770150
+pre_set: 1169082762
+ post_set: 1438349418
+ variable: tmp3
+Place: 1062701206
+pre_set:
+ post_set: 202540492
+ variable:
+Place: 1184334171
+pre_set: 78487954
+ post_set:
+ variable: tmp1
+Place: 1446094531
+pre_set: 1438349418
+ post_set: 895347189
+ variable: tmp4
+Place: 1533374615
+pre_set: 1623390305
+ post_set:
+ variable: tmp
+Place: 1857664789
+pre_set: 1654848637
+ post_set: 1169082762
+ variable: tmp2
+Transition: 78487954
+pre_set:
+post_set: 1184334171
+transition function: operator: store op1: 5 op2:
+Transition: 202540492
+pre_set: 1062701206
+post_set: 197677143
+transition function: operator: alloca op1: 1 op2:
+Transition: 701821477
+pre_set: 806681455
+post_set: 830950674
+transition function: operator: alloca op1: 1 op2:
+Transition: 895347189
+pre_set: 1446094531
+post_set: 44518335
+transition function: operator: store op1:  op2:
+Transition: 983157227
+pre_set: 702460492
+post_set: 27401955
+transition function: operator: getelementptr op1: 1 op2:
+Transition: 1169082762
+pre_set: 1857664789
+post_set: 907770150
+transition function: operator: load op1:  op2:
+Transition: 1438349418
+pre_set: 907770150
+post_set: 1446094531
+transition function: operator: add op1:  op2: 2
+Transition: 1535881485
+pre_set: 336468549
+post_set: 702460492 592083620
+transition function: operator: alloca op1: 1 op2:
+Transition: 1623390305
+pre_set:
+post_set: 1533374615
+transition function: operator: store op1: 0 op2:
+Transition: 1654848637
+pre_set: 592083620
+post_set: 1857664789
+transition function: operator: getelementptr op1: 1 op2:
+
+  ret i32 0
